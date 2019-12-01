@@ -1,11 +1,3 @@
-//const http = require('http');
-
-//const server = http.createServer((request, response) => {
-  //response.writeHead(200, {"Content-Type": "text/plain"});
-  //resp.write(html, 'utf8');
-  //response.end("<h1>Hello</h1>");
-//});
-
 const port = process.env.PORT || 1337;
 require('http').createServer(function (req, resp) {
   var html = [
@@ -30,7 +22,5 @@ require('http').createServer(function (req, resp) {
   resp.write(html, 'utf8');
   resp.end();
 }).listen(port);
-
-//server.listen(port);
 
 console.log("Server running at http://localhost:%d", port);
