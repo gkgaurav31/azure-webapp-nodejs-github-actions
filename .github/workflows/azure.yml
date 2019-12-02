@@ -31,8 +31,6 @@ jobs:
         node-version: ${{ env.NODE_VERSION }}
     - name: "Print Secret"
       run: echo ${{ secrets.DEMO}}
-    - name: "Print Environment Variables"
-      run: echo ${{ env.DEMO}}
     - name: npm install, build, and test 
       run: |
         # Build and test the project, then
