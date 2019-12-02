@@ -29,7 +29,9 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ env.NODE_VERSION }}
-    - name: "For demo"
+    - name: "Print Secret"
+      run: echo ${{ secret.DEMO}}
+    - name: "Print Environment Variables"
       run: echo ${{ env.DEMO}}
     - name: npm install, build, and test 
       run: |
