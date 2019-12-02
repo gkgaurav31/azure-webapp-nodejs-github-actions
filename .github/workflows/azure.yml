@@ -30,7 +30,8 @@ jobs:
         node-version: ${{ env.NODE_VERSION }}
     - name: "For demo"
       run: | 
-        echo secret.DEMO
+        echo ${secret.DEMO}
+        echo ${env.DEMO}
     - name: npm install, build, and test 
       run: |
         # Build and test the project, then
