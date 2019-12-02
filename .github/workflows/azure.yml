@@ -28,8 +28,10 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ env.NODE_VERSION }}
-    - name: for demo! 
-      run: echo ${{ secret.DEMO}}
+    - name: for demo
+      run: | 
+        echo ${{ secret.DEMO}}
+        echo ${{ env.NODE_VERSION}}
     - name: npm install, build, and test 
       run: |
         # Build and test the project, then
