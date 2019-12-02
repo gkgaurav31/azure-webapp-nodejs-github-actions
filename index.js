@@ -7,10 +7,9 @@ require('http').createServer(function (req, resp) {
               '<meta charset="utf-8" />',
               '<title>Azure GitHub</title>',
           '</head>',
-          //'<body style="background-color:#4078c0;padding-top:100px; ">',
           '<body style="background:linear-gradient(-135deg, #E4A972, #9941D8); height: 1000px; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-repeat:no-repeat; padding-top:100px; ">',
           '<center><img style="height:100px" src="https://www.stickpng.com/assets/images/5847f98fcef1014c0b5e48c0.png">', 
-              '<h1 style="font-size:60px;color:black;font-family: Sans-serif, Times, serif;">Microsoft × GitHub = ∞</h1></center>',
+              '<h1 style="font-size:60px;color:black;font-family: Sans-serif, Times, serif;">Microsoft x GitHub = Awesome!</h1></center>',
           '</body>',
       '</html>'
   ].join('');
